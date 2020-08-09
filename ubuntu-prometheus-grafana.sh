@@ -16,8 +16,8 @@ cd promethues-grafana-kubernetes
 kubectl create ns monitoring
 
 kubectl -n monitoring apply -f prometheus-operator
-kubectl -n monitoring apply -f prometheus-operator
-kubectl -n monitoring apply -f prometheus-operator
+kubectl -n monitoring apply -f prometheus-cluster-monitoring
+kubectl -n monitoring apply -f kube-state-metrics
 kubectl -n monitoring apply -f node-exporter
 kubectl -n monitoring apply -f grafana
 # kubectl -n monitoring apply -f alertmanager
