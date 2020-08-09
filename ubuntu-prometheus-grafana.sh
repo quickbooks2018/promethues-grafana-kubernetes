@@ -20,7 +20,7 @@ kubectl -n monitoring apply -f prometheus-operator
 kubectl -n monitoring apply -f prometheus-operator
 kubectl -n monitoring apply -f node-exporter
 kubectl -n monitoring apply -f grafana
-kubectl -n monitoring apply -f alertmanager
+# kubectl -n monitoring apply -f alertmanager
 
 # END
 
