@@ -27,8 +27,8 @@ eksctl create cluster \
   --region us-east-1 \
   --node-private-networking \
   --nodegroup-name worker \
-  --node-type t2.medium \
-  --nodes 2 \
+  --node-type t3a.medium \
+  --nodes 3 \
   --nodes-min 1 \
   --nodes-max 4 \
   --ssh-access \
