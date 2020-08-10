@@ -25,7 +25,9 @@ kubectl -n monitoring apply -f grafana
 # END
 
 
-# kubectl.exe -n monitoring port-forward svc/grafana 8080:3000
+# kubectl -n monitoring port-forward svc/grafana 8080:3000
+
+# kubectl -n monitoring port-forward svc/grafana --address 0.0.0.0 3000:3000
 
 #########################################################################
 # https://hub.docker.com/u/kindest
